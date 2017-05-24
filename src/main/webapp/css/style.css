@@ -5,18 +5,6 @@
 	border-radius: 5px;
 }
 
-h1 {
-	color: white;
-	font-size: 60px;
-	text-align: center;
-}
-
-p {
-	color: white;
-	font-size: 36px;
-	text-align: center;
-}
-
 .panel>.panel-heading {
 	background-color: #222222;
 	color: white;
@@ -33,4 +21,56 @@ p {
 
 #descricao {
 	max-width: 100%;
+}
+
+#rodape {
+	background-color: #222222;
+	color: white;
+}
+
+#usuario {
+	color: black;
+}
+
+.link {
+	color: black;
+}
+
+.tituloMenu {
+	color: #00C853;
+	font-size: 60px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-variant: small-caps;
+}
+
+.subTituloMenu {
+	color: #E0E0E0;
+	font-size: 26px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.blocoServico {
+	background: #eeeeee;
+	padding: 0 0 0 0;
+	margin: 5px;
+}
+
+.blocoServicoMensagem {
+	padding: 5px 5px 5px 5px;
+}
+
+.blocoServicoMensagem>.titulo {
+	font-size: 15px;
+	font-weight: normal;
+	color: #333333;
+}
+
+.blocoServicoMensagem>.corpo {
+	font-size: 12px;
+	font-weight: normal;
+	color: #555555;
 }

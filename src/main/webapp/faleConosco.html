@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    
-    <title>Sale Service</title>
+<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="javascriptCadastro.js"></script>
+<title>Sale Service</title>
 
-  </head>
-  <body>
-  
-  <!-- Dados do Cabeçalho da página -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="javascriptCadastro.js"></script>
+
+</head>
+<body>
+	<!-- Dados do Cabeçalho da página -->
 	<nav class="navbar navbar-inverse navbar-static-top">
 		<div class="container-fluid">
-			<!-- Tituos -->
-			<div class="" id="titulo">
-				<h1>Sale Service</h1>      
-				<p>Missão, Visão e Valores</p>
+			<div class="text-center">
+				<label class="tituloMenu">SaleService</label> <br /> <label
+					class="subTituloMenu">Seu site de busca de serviços</label>
 			</div>
-			<!-- Home -->
 			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
-			  </button>
-			  <a class="navbar-brand" href="/SaleService/"><span class="glyphicon glyphicon-home"></span></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<li class="active"><a class="navbar-brand" href="/SaleService/"><span
+						class="glyphicon glyphicon-home"></span></a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-				<!-- Botões e links do menu -->
-				  <li><a href="/SaleService/produtos/produtos.html">Serviços</a></li>
-					<li><a href="/SaleService/cadastroAnuncio/cadastroAnuncio.html">Cadastrar Anuncio</a></li>
-					<li class="active"><a href="/SaleService/faleConosco/faleConosco.html">Contato</a></li>
+					<li><a href="/SaleService/produtos.html">Serviços</a></li>
+					<li><a href="/SaleService/cadastroAnuncio.html">Cadastrar
+							Anuncio</a></li>
+					<li><a href="/SaleService/faleConosco.html">Contato</a></li>
 				</ul>
-				<!--Botão de carrinho (com icone)-->
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/SaleService/login/usuarioLogin.html"><span class="glyphicon glyphicon-user"></span> Sua conta </a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrinho</a></li>
+					<li><a href="/SaleService/usuarioLogin.html"><span
+							class="glyphicon glyphicon-user"></span> Sua conta </a></li>
+					<li><a href="#"><span
+							class="glyphicon glyphicon-shopping-cart"></span> Carrinho</a></li>
 				</ul>
-				<a class="navbar-brand navbar-right" href="/SaleService/produtos/produtos.html"><span class="glyphicon glyphicon-search"></span></a>
+				<a class="navbar-brand navbar-right"
+					href="/SaleService/produtos.html"><span
+					class="glyphicon glyphicon-search"></span></a>
 			</div>
 		</div>
-		</nav>
-		
-		<!-- Fim Cabeçalho -->
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-md-20 col-sm-offset-2 col-md-offset-2">
-					<form role="form">
-						<h2>Fale Conosco</h2>
-						<hr class="colorgraph">
+	</nav>
+	<!-- Fim Cabeçalho -->
+	
+	<div class="container">
+		<div class="row">
+			<div
+				class="col-xs-12 col-sm-8 col-md-20 col-sm-offset-2 col-md-offset-2">
+				<form role="form">
+					<h2>Fale Conosco</h2>
+					<hr class="colorgraph">
+					<div class="form-group">
+						<input type="text" name="first_name" id="first_name"
+							class="form-control input-lg" placeholder="Nome" tabindex="1">
+					</div>
+					<div class="form-group">
+						<input type="text" name="display_name" id="display_name"
+							class="form-control input-lg" placeholder="E-mail" tabindex="2">
+					</div>
+					<div class="form-group">
+						<input type="text" name="display_name" id="display_name"
+							class="form-control input-lg" placeholder="Assunto" tabindex="3">
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
 							<div class="form-group">
-								<input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Nome" tabindex="1">
+								<textarea type="text" name="display_name" id="descricao"
+									class="form-control input-lg" rows="7" placeholder="Mensagem"
+									tabindex="4"></textarea>
 							</div>
-							<div class="form-group">
-								<input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="E-mail" tabindex="2">
-							</div>
-							<div class="form-group">
-								<input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Assunto" tabindex="3">
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-12">
-									<div class="form-group">									
-										<textarea type="text" name="display_name" id="descricao" class="form-control input-lg" rows="7" placeholder="Mensagem" tabindex="4"></textarea>
-									</div>
-								</div>
-							</div>
-								<hr class="colorgraph">
-								<div class="row">
-								<div class="col-xs-12 col-md-6 col-md-offset-3"><input type="submit" value="Enviar" class="btn btn-primary btn-block btn-lg" tabindex="16">
-								</div>					
-							</div>
-					</form>
-				</div>
+						</div>
+					</div>
+					<hr class="colorgraph">
+					<div class="row">
+						<div class="col-xs-12 col-md-6 col-md-offset-3">
+							<input type="submit" value="Enviar"
+								class="btn btn-primary btn-block btn-lg" tabindex="16">
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
-  </body>
+	</div>
+</body>
 </html>
