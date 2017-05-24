@@ -4,15 +4,12 @@
 <title>Sale Service</title>
 
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="javascriptCadastro.js"></script>
-
 </head>
 <body>
 	<!-- Dados do Cabeçalho da página -->
@@ -55,30 +52,28 @@
 	<div class="col-md-2">
 		<ul class="nav nav-pills nav-stacked">
 			<h3>Filtros</h3>
-			<div class="navbar-btn">
+			<div class="form-group">
 				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search">
+					<input type="text" class="form-control input-sm"
+						placeholder="Filtro">
 					<div class="input-group-btn">
-						<button class="btn btn-default" type="submit">
+						<button class="btn btn-default input-sm" type="submit">
 							<i class="glyphicon glyphicon-search"></i>
 						</button>
 					</div>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="form-group">
-						<label for="sel1"></label> <select class="form-control"
-							id="categoria" name="categoria">
-							<option selected disabled value="0">Ordenar Por</option>
-							<option>Preço</option>
-							<option>Categoria</option>
-							<option>Destaques</option>
-						</select>
-					</div>
-				</div>
+			<div class="form-group">
+				<select class="form-control input-sm" id="ordenar" name="ordenar"
+					placeholder="Ordenar">
+					<option hidden>Ordernar por</option>
+					<option>Preço (Mais Baratos)</option>
+					<option>Preço (Mais Caros)</option>
+					<option>Categoria</option>
+					<option>Destaques</option>
+				</select>
 			</div>
+
 
 			<hr class="colorgraph">
 			<li><h4>Preço</h4></li>
@@ -123,54 +118,49 @@
 			<hr class="colorgraph">
 		</ul>
 	</div>
-
-
-
-	<div class="container">
+	<div class="container col-sm-10">
 		<div class="row">
 			<div class="col-sm-4">
-				<a class="link" href="/SaleService/servico.html">
-					<div class="panel panel-primary">
-						<div class="panel-heading">Serviço Domestico</div>
-						<div class="panel-body">
-							<img src="img/domestica.jpg" class="img-responsive"
-								style="width: 100%" alt="Image">
+				<div class="blocoServico">
+					<a class="link" href="/SaleService/servico.html"> <img
+						src="img/domestica.jpg" class="img-responsive" style="width: 100%"
+						alt="Image" />
+						<div class="blocoServicoMensagem">
+							<label class="titulo">Serviço Domestico</label> <br /> <label
+								class="corpo">Prestação de serviços em seu domicilio</label>
 						</div>
-						<div class="panel-footer">Prestação de serviços em seu
-							domicilio</div>
-					</div>
-				</a>
+					</a>
+				</div>
 			</div>
 			<div class="col-sm-4">
-				<a class="link" href="/SaleService/servico.html">
-					<div class="panel panel-primary">
-						<div class="panel-heading">Assistência técnica de celular</div>
-						<div class="panel-body">
-							<img src="img/tecnico_celular.jpg" class="img-responsive"
-								style="width: 100%" alt="Image">
+				<div class="blocoServico">
+					<a class="link" href="/SaleService/servico.html"> <img
+						src="img/tecnico_celular.jpg" class="img-responsive"
+						style="width: 100%" alt="Image" />
+						<div class="blocoServicoMensagem">
+							<label class="titulo">Assistência técnica de celular</label><br />
+							<label class="corpo">restamos assistência técnica das
+								demais marcas</label>
 						</div>
-						<div class="panel-footer">Prestamos assistência técnica das
-							demais marcas</div>
-					</div>
-				</a>
+					</a>
+				</div>
 			</div>
 			<div class="col-sm-4">
-				<a class="link" href="/SaleService/servico.html">
-					<div class="panel panel-primary">
-						<div class="panel-heading">Auditoria de Micro empresas</div>
-						<div class="panel-body">
-							<img src="img/auditoria_empresa.jpg" class="img-responsive"
-								style="width: 100%" alt="Image">
+				<div class="blocoServico">
+					<a class="link" href="/SaleService/servico.html"> <img
+						src="img/auditoria_empresa.jpg" class="img-responsive"
+						style="width: 100%" alt="Image" />
+						<div class="blocoServicoMensagem">
+							<label class="titulo">Acompanhando sua microempresa de
+								perto</label><br /> <label class="corpo">Serviços especializado
+								de auditora para mico e pequenas empresas</label>
 						</div>
-						<div class="panel-footer">Acompanhando sua micro empresa de
-							perto!</div>
-					</div>
-				</a>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
-
-
+	<br />
 	<div class="text-center">
 		<ul class="pagination">
 			<li><a href="#" aria-label="Previous"> <span
